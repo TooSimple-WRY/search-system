@@ -1,4 +1,6 @@
 import re
+
+
 def get_sentences(doc):
     line_break = re.compile('[\r\n]')
     delimiter = re.compile('[，。？！；“”《》【】]')

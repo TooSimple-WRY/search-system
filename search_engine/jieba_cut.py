@@ -1,5 +1,7 @@
 import jieba
 import jieba.analyse
+
+
 def Jieba(sentence):
     words = []
     useless = []
@@ -11,6 +13,6 @@ def Jieba(sentence):
     word = jieba.lcut(sentence)
     for w in word:
         # 排除停用词且长度不能太低
-        if (w not in useless and len(w) > 1):
+        if w not in useless and len(w) > 1:
             words.append(w)
     return words
